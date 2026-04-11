@@ -11,12 +11,12 @@ class Interest{
 		n = sc.nextFloat();
 	}
 	final public void display(){
-		System.out.println("\nInterst is " + in");
+		System.out.println("\nInterst is " + in);
 	}
 }
 class Simple extends Interest{
 	public void calculate(){
-		in = p*n*r/100;
+		in = p*n*roi/100;
 	}
 }
 class Compound extends Interest{
@@ -26,13 +26,23 @@ class Compound extends Interest{
 }
 class P10b{
 	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
 		Simple s = new Simple();
 		Compound c = new Compound();
-		s.accept();
-		s.calculate();
-		s.display();
-		c.accept();
-		c.calculate();
-		c.display();
+		Interest i;
+		System.out.print("If Simple Intrest is to be calculated- Press 1, else Compound Interest will be Calculated: ");
+		int choice = sc.nextInt();
+		if(choice == 1){
+			i = s;
+			s.accept();
+			s.calculate();
+			s.display();
+		}
+		else{
+			i = c;
+			c.accept();
+			c.calculate();
+			c.display();
+		}
 	}
 }
