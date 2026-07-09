@@ -21,5 +21,3 @@ class P9a{
 		System.out.print("Reversed String is " + str);
 	}
 }
-		
-	

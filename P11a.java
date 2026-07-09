@@ -45,16 +45,16 @@ class Rectangle extends Shape{
 class P11a{
 	public static void main(String args[]){
 		Circle c = new Circle();
-		c.getData();
-		c.calArea();
-		c.displayArea();
+			c.getData();
+			c.calArea();
+			c.displayArea();
 		Rectangle r = new Rectangle();
-		r.getData();
-		r.calArea();
-		r.displayArea();
+			r.getData();
+			r.calArea();
+			r.displayArea();
 		Triangle t = new Triangle();
-		t.getData();
-		t.calArea();
-		t.displayArea();
+			t.getData();
+			t.calArea();
+			t.displayArea();
 	}
 }
